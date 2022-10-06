@@ -1,0 +1,169 @@
+/**
+ *
+ * @author      Leonardo Marquine Pereira <lmarquine@gmail.com>
+ * @copyright   2022 Leonardo (http://web2view.com.br)
+ * @license     http://web2view.com.br Copyright
+ * @link        http://web2view.com.br
+ *
+ */
+
+#form_register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    padding: 0 25px;
+    margin-bottom: 50px;
+}
+
+.container.register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fieldset {
+    padding: 0 0 25px 0;
+    width: 100%;
+}
+
+.fieldset-time {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.form-register__sesssion.title {
+    font-family: var(--font-primary);
+    color: var(--color-primary);
+    font-size: 24px;
+    font-weight: 800;
+    padding-bottom: 20px;
+}
+
+.form-label {
+    font-family: var(--font-secondary);
+    font-size: 1.5rem;
+}
+
+.form-label.required:after {
+    display: inline-block;
+    content: '*';
+    color: var(--color-cancel);
+}
+
+.field-block input.required.error {
+    border: 2px solid var(--color-cancel);
+}
+
+.error-message {
+    font-family: var(--font-primary);
+    color: var(--color-cancel);
+    font-size: 1.5rem;
+}
+
+.field {
+    display: flex;
+    width: 100%;
+    max-width: 600px;
+    height: 40px;
+    border: 1px solid var(--color-primary);
+    border-radius: 5px;
+    margin: 10px 0;
+    font-size: var(--font-form__input);
+    padding-left: 15px;
+    outline: none;
+}
+
+.field.field-description {
+    height: 300px;
+    resize: none;
+}
+
+.fieldset-time .from,
+.fieldset-time .to {
+    width: 48%;
+}
+
+.field.field-time.field-time__hour,
+.field.field-time.field-time__hour {
+    width: 100%;
+}
+
+.fieldset-hours {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fieldset-hour-open,
+.fieldset-hour-close {
+    width: 48%;
+}
+
+.fieldset-active {
+    display: flex;
+    justify-content: center;
+}
+
+.field.field-alerts {
+    background: var(--color-white);
+}
+
+.field-active {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.fieldset-active label[for="yes"]:before {
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f058";
+    letter-spacing: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    color: #434343;
+}
+
+input[name="yesno"]:checked+label[for="yes"]:before {
+    color: var(--color-primary);
+}
+
+.fieldset-active label[for="no"]:before {
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f057";
+    letter-spacing: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    color: #434343;
+}
+
+input[name="yesno"]:checked+label[for="no"]:before {
+    color: var(--color-cancel);
+}
+
+.btn {
+    padding: 15px 40px;
+    font-family: var(--font-secondary);
+    font-weight: 600;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    text-shadow: 2px 2px 5px var(--color-black);
+}
+
+.btn-submit {
+    background: var(--color-primary);
+    color: var(--color-white);
+}
+
+.btn-cancel {
+    background: var(--color-cancel);
+    color: var(--color-white);
+}

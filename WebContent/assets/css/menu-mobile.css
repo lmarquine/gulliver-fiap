@@ -1,0 +1,79 @@
+/**
+ *
+ * @author      Leonardo Marquine Pereira <lmarquine@gmail.com>
+ * @copyright   2022 Leonardo (http://web2view.com.br)
+ * @license     http://web2view.com.br Copyright
+ * @link        http://web2view.com.br
+ *
+ */
+
+#btn-mobile {
+    display: none;
+    padding: 20px;
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    .slide-arrow.next-arrow.slick-arrow {
+        right: 0;
+    }
+
+    .slide-arrow.prev-arrow.slick-arrow {
+        left: 0;
+    }
+
+    #btn-mobile {
+        display: block;
+    }
+
+    #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 165px;
+        right: 0;
+        background: var(--color-primary);
+        transition: .6s;
+        z-index: 5;
+        height: 0;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #menu li {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #nav.active #menu {
+        height: 100%;
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #nav #btn-mobile {
+        transition: .3s;
+    }
+
+    #nav #btn-mobile:before {
+        font-family: FontAwesome;
+        display: inline-block;
+        content: "\f0c9";
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    #nav.active #btn-mobile:before {
+        font-family: FontAwesome;
+        display: inline-block;
+        content: "\f00d";
+        font-size: 24px;
+        cursor: pointer;
+    }
+}

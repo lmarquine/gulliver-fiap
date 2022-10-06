@@ -1,0 +1,104 @@
+/**
+ *
+ * @author      Leonardo Marquine Pereira <lmarquine@gmail.com>
+ * @copyright   2022 Leonardo (http://web2view.com.br)
+ * @license     http://web2view.com.br Copyright
+ * @link        http://web2view.com.br
+ *
+ */
+
+.slider-item {
+    position: relative;
+}
+
+.description-wrap {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 450px;
+    background: #fff;
+    border-radius: 5px;
+    margin: 25px;
+    padding: 30px;
+}
+
+.description-wrap.o-negocio {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.description.lucifer h2 {
+    color: var(--color-primary);
+    font-family: var(--font-secondary);
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.description.o-negocio p {
+    font-family: var(--font-primary);
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.description h2 {
+    color: var(--color-primary);
+    font-family: var(--font-secondary);
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.description p {
+    font-family: var(--font-primary);
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.description .goto {
+    text-align: center;
+    text-decoration: none;
+    color: var(--color-cancel);
+    border: 2px solid var(--color-cancel);
+    font-family: var(--font-primary);
+    font-weight: 600;
+    font-size: 18px;
+    margin: 15px 0;
+    padding: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.description .goto:hover {
+    color: var(--color-white);
+    background: var(--color-cancel);
+}
+
+
+
+@media only screen and (max-width: 767px) {
+    .description-wrap {
+        position: relative;
+    }
+
+    .description {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 450px;
+        background: #fff;
+        border-radius: 5px;
+        margin: 0;
+        padding: 20px;
+    }
+}

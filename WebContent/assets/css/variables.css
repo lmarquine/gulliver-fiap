@@ -1,0 +1,36 @@
+/**
+ *
+ * @author      Leonardo Marquine Pereira <lmarquine@gmail.com>
+ * @copyright   2022 Leonardo (http://web2view.com.br)
+ * @license     http://web2view.com.br Copyright
+ * @link        http://web2view.com.br
+ *
+ */
+
+:root {
+    /**
+    *** FONT FAMILY
+    */
+
+    --font-primary: 'Roboto', sans-serif;
+    --font-secondary: 'Poppins', sans-serif;
+
+    /**
+    *** FONT SIZE
+    */
+
+    --font-form__input: 16px;
+
+    /**
+    *** COLORS
+    */
+
+    --color-white: #fff;
+    --color-black: #000;
+    --color-blue: #4169e1;
+    --color-cancel: #d32f2f;
+    --color-cancel__hover: #ff6659;
+    --color-primary: #00695c;
+    --color-primary__hover: #003d33;
+    --color-hero-hover: #f50057;
+}
