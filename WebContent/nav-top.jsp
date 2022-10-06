@@ -4,9 +4,9 @@
     <button id="btn-mobile"></button>
     <ul id="menu">
         <li><a href="./home">Home</a></li>
-        <li><a href="./hospedagens.php">Hospedagens</a></li>
-        <li><a href="./cadastro.php">Cadastrar Novo Destino</a></li>
-        <li><a href="./listDestinity">Séries</a></li>
+        <li><a href="./home">Hospedagens</a></li>
+        <li><a href="./home">Cadastrar Novo Destino</a></li>
+        <li><a href="./destino.do?id=0">Séries</a></li>
     </ul>
 
     <ul id="accessibility-options">
