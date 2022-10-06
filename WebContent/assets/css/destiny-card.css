@@ -1,0 +1,18 @@
+@charset "UTF-8";
+.destiny-card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 45px;
+}
+.destiny-card {
+	
+}
+
+.place-image {
+    max-width: 300px;
+}
+
+.place-image_img {
+	width: 100%;
+}

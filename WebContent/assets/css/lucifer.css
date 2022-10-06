@@ -1,0 +1,97 @@
+/**
+ *
+ * @author      Leonardo Marquine Pereira <lmarquine@gmail.com>
+ * @copyright   2022 Leonardo (http://web2view.com.br)
+ * @license     http://web2view.com.br Copyright
+ * @link        http://web2view.com.br
+ *
+ */
+
+.header.hero .container {
+    background: transparent;
+}
+
+.hero {
+    height: 100vh;
+    background: url("../../assets/images/series/page-lucifer.jpg") no-repeat;
+    background-size: cover;
+}
+
+#nav {
+    background: transparent;
+}
+
+#menu li {
+    background: transparent;
+}
+
+#menu li a:hover {
+    color: var(--color-hero-hover);
+}
+
+.about {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.about p a,
+.about p a:visited {
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+.about p a:hover {
+    color: var(--color-hero-hover);
+}
+
+.about-summary,
+.about-attractions {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 22px;
+    line-height: 1.5;
+    font-family: var(--font-secondary);
+}
+
+.about h2,
+.about-attractions h2{
+    font-size: 28px;
+    font-family: var(--font-secondary);
+    font-weight: 600;
+    line-height: 1.5;
+    padding: 15px 0;
+    flex: 0 0 100%;
+}
+
+.about-summary p,
+.about-attractions p {
+    margin: 25px 0;
+}
+
+.about.attraction h3 {
+    font-size: 2.8rem;
+    margin: 20px 0;
+}
+
+.about.attraction p {
+    font-size: 2rem;
+}
+
+.div-map {
+    max-width:100%;
+    list-style:none;
+    transition: none;
+    overflow:hidden;
+    width:500px;
+    height:500px;
+    margin: 25px 0;
+}
+
+.div-map iframe {
+    height:100%;
+    width:100%;
+    border:0;
+}

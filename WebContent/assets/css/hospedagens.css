@@ -1,0 +1,342 @@
+.featured {
+    width: 100%;
+}
+
+.featured .title {
+    font-family: var(--font-secondary);
+    color: var(--color-black);
+    font-size: 2.6rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.featured .description {
+    font-family: var(--font-secondary);
+    color: var(--color-black);
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+#map {
+    height: 550px;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 0 !important;
+}
+
+table {
+    font-size: 12px;
+}
+
+.hotel-search {
+    width: 100%;
+    max-width: 450px;
+    max-height: 550px;
+    display: flex;
+    flex-direction: column;
+    background: var(--color-primary);
+    color: var(--color-white);
+    padding: 25px;
+    border-radius: 5px;
+}
+
+.results {
+    display: flex;
+    padding-left: 25px;
+    justify-content: center;
+}
+
+#map {
+    position: relative;
+    overflow: hidden;
+    width: 750px;
+}
+
+#listing {
+    position: relative;
+    width: 200px;
+    overflow: auto;
+    cursor: pointer;
+    overflow-x: hidden;
+    margin: 0 40px;
+    height: 550px;
+    width: 100%;
+    max-width: 255px;
+}
+
+#findhotels {
+    font-size: 14px;
+}
+
+#locationField {
+    margin: 10px 0;
+}
+
+#controls {
+    width: 100%;
+}
+
+#autocomplete {
+    width: 100%;
+    max-width: 406px;
+    height: 50px;
+    padding: 0 20px;
+    border: 1px solid var(--color-primary);
+    border-radius: 10px;
+    font-size: 16px;
+    -webkit-appearance: none;
+    outline: none;
+}
+
+#country {
+    width: 100%;
+    max-width: 406px;
+    height: 50px;
+    padding: 0 20px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.placeIcon {
+    width: 20px;
+    height: 34px;
+    margin: 4px;
+}
+
+.hotelIcon {
+    width: 24px;
+    height: 24px;
+}
+
+#resultsTable {
+    border-collapse: collapse;
+    width: 240px;
+}
+
+#rating {
+    font-size: 13px;
+    font-family: Arial Unicode MS;
+}
+
+.iw_table_row {
+    height: 18px;
+}
+
+.iw_attribute_name {
+    font-weight: bold;
+    text-align: right;
+}
+
+.iw_table_icon {
+    text-align: right;
+}
+
+@media only screen and (max-width: 768px) {
+    .hotel-search {
+        max-width: fit-content;
+    }
+
+    #locationField {
+        max-width: 80%;
+    }
+
+    .results {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 15px 0;
+    }
+
+    #map {
+        width: 100%;
+        height: calc(100vh / 2);
+    }
+
+    #listing {
+        width: 100%;
+        margin: 0;
+        padding: 15px 0;
+        height: 100%;
+    }
+
+    #resultsTable {
+        margin: 0;
+        width: 100%;
+    }
+}
+
+/*CARDS*/
+
+.place-card {
+    display: flex;
+    padding-top: 15px;
+}
+.place-info {
+    padding: 0 15px;
+}
+.place-name {
+    font-size: 24px;
+}
+.place-description {
+    font-size: 18px;
+}
+.place-site {
+    font-size: 22px;
+}
+.place-site a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: var(--font-primary);
+    color: var(--color-primary);
+    font-weight: 700;
+}
+.flex-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+.tab-card-title {
+    width: 100%;
+    font-size: 28px;
+    padding: 15px;
+    color: var(--color-primary);
+    font-family: var(--font-primary);
+}
+.place-card {
+    margin: 10px;
+    width: calc(50% - 20px);
+    align-items: center;
+}
+.place-review {
+    padding: 15px 0;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: var(--font-primary);
+}
+.place-review a {
+    text-decoration: none;
+    color: var(--color-primary);
+}
+.tabs-container {
+    max-width: 100%;
+    margin: 15px 15px 40px 15px;
+}
+div#tabs-nav {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+}
+div#tabs-nav a:nth-child(even) {
+    margin: 0 3px;
+}
+a.tabs-menu {
+    display: inline-block;
+    background-color: var(--color-primary);
+    font-size: 28px;
+    font-family: Arial,Helvetica,sans-serif;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    text-decoration: none;
+    border: solid 2px var(--color-primary);
+    border-bottom: 0;
+    border-radius: 3px 3px 0 0;
+}
+a.tabs-menu.tabs-menu-active {
+    background-color: #fff;
+    border: solid 2px var(--color-primary);
+    color: #6b6b6b;
+    border-bottom: 0;
+}
+.tabs-content {
+    border: solid 2px var(--color-primary);
+    margin-top: -2px;
+    background-color: #fff;
+    overflow: hidden;
+    line-height: 1.5;
+}
+.tabs-panel {
+    display: none;
+    min-height: 150px;
+    overflow: auto;
+    padding: 10px;
+    font-size: 14px;
+}
+
+/************ CSS Animation ***********/
+
+.animated-tabs {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+@-webkit-keyframes bounceIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(.3);
+    }
+
+    50% {
+        opacity: 1;
+        -webkit-transform: scale(1.05);
+    }
+
+    70% {
+        -webkit-transform: scale(.9);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(.3);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+
+    70% {
+        transform: scale(.9);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.bounceIn {
+    -webkit-animation-name: bounceIn;
+    animation-name: bounceIn;
+}
+
+@media only screen and (max-width: 768px) {
+    a.tabs-menu.tabs-menu-active {
+        word-break: break-all;
+        text-align: center;
+    }
+    .flex-content {
+        flex-direction: column;
+    }
+    .place-card {
+        width: 100%;
+        flex-direction: column;
+    }
+    a.tabs-menu {
+        font-size: 12px;
+    }
+}

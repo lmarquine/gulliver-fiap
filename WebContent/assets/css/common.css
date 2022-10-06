@@ -1,0 +1,189 @@
+/**
+ *
+ * @author      Leonardo Marquine Pereira <lmarquine@gmail.com>
+ * @copyright   2022 Leonardo (http://web2view.com.br)
+ * @license     http://web2view.com.br Copyright
+ * @link        http://web2view.com.br
+ *
+ */
+
+html {
+    font-size:10px;
+}
+
+h1 {
+    font-family: var(--font-secondary);
+    color: var(--color-primary);
+    font-size: 3.6rem;
+    font-weight: 800;
+    padding: 15px 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1920px;
+        margin: 0 auto;
+}
+
+.header {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    background: var(--color-white);
+}
+
+.header .container {
+    background: var(--color-white);
+}
+
+.header .container .logo .logo-img {
+    width: 100%;
+    max-width: 300px;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    background: var(--color-primary);
+    font-family: var(--font-primary);
+    font-weight: 800;
+}
+
+.top-nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.top-nav ul li {
+    display: inline-block;
+    padding: 25px;
+}
+
+.top-nav ul li:hover {
+    color: var(--color-white);
+    text-shadow: 2px 2px 5px var(--color-black);
+    background: var(--color-primary__hover);
+}
+
+.top-nav ul li a {
+    color: var(--color-white);
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 25px;
+    font-size: 1.8rem;
+}
+
+#accessibility-options li,
+#accessibility-options li .a {
+    padding: 25px 0;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    padding: 0 25px;
+}
+
+.footer {
+    display: flex;
+    background: var(--color-primary);
+    justify-content: center;
+}
+
+.footer > .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer .col {
+    width: calc( 100% / 4);
+    padding: 50px 0;
+    text-decoration: none;
+}
+
+.footer .copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    font-size: 1.5rem;
+    color: var(--color-white);
+}
+
+.footer .col ul {
+    list-style: none;
+}
+
+.footer .col ul li {
+    padding: 10px 0;
+}
+
+.footer .col li a {
+    font-size: 1.8rem;
+    line-height: 2rem;
+    font-weight: 600;
+    font-family: var(--font-primary);
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+.footer .col li a:hover {
+    color: var(--color-hero-hover);
+}
+
+.about-places {
+    font-family: var(--font-primary);
+    color: var(--color-black);
+    font-size: 2.4rem;
+    margin: 25px 0;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .main-content {
+        padding: 0;
+    }
+
+    .top-nav ul li a {
+        padding: 12px;
+    }
+
+    .top-nav ul {
+        margin: 0 auto;
+    }
+
+    .footer .container {
+        padding: 0 25px;
+        flex-direction: column;
+    }
+
+    .footer .col {
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+.main {
+	margin-bottom: 80px
+}
+
+.image-feature,
+.short-description {
+	width: 50%;
+}
+
+.video {
+	padding: 45px 0;
+}
+
+.row.page-2-columns {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.short-description {
+	font-size: 28px;
+	padding: 45px;
+    box-sizing: border-box;
+}

@@ -1,0 +1,107 @@
+/**
+ *
+ * @author      Leonardo Marquine Pereira <lmarquine@gmail.com>
+ * @copyright   2022 Leonardo (http://web2view.com.br)
+ * @license     http://web2view.com.br Copyright
+ * @link        http://web2view.com.br
+ *
+ */
+
+.field.focused {
+    border: 2px solid var(--color-blue);
+}
+
+.button.fontSize {
+    cursor: pointer;
+}
+
+body.contrast {
+    background: var(--color-black);
+}
+
+body.contrast .header {
+    background: var(--color-black);
+}
+
+body.contrast .header .logo {
+    background: var(--color-black);
+}
+
+body.contrast .header .container .logo .logo-img {
+    filter: invert();
+}
+
+body.contrast .top-nav {
+    background: var(--color-black);
+}
+
+body.contrast .top-nav li:hover {
+    background: var(--color-white);
+}
+
+body.contrast .top-nav li:hover a {
+    color: var(--color-black);
+    text-shadow: none;
+}
+
+body.contrast h1 {
+    color: var(--color-white);
+}
+
+body.contrast * {
+    color: var(--color-white);
+}
+
+body.contrast .next-arrow {
+    border-left: 15px solid var(--color-white);
+}
+
+body.contrast .prev-arrow {
+    border-right: 15px solid var(--color-white);
+}
+
+body.contrast .field.field-time.field-time__hour,
+body.contrast .field.field-time.field-time__hour,
+body.contrast .field.field-time.fieldset-hours-open,
+body.contrast .field.field-time.fieldset-hours-close {
+    color: var(--color-black);
+}
+
+body.contrast .field::placeholder {
+    color: var(--color-black);
+}
+
+body.contrast .form-register__sesssion.title {
+    color: var(--color-white);
+}
+
+body.contrast .field.field-alerts,
+body.contrast .field-alerts__option {
+    color: var(--color-black);
+}
+
+body.contrast input[name="yesno"]+label[for="yes"]:before {
+    color: var(--color-white);
+}
+
+body.contrast input[name="yesno"]+label[for="no"]:before {
+    color: var(--color-white);
+}
+
+body.contrast input[name="yesno"]:checked+label[for="yes"]:before {
+    color: var(--color-cancel);
+}
+
+body.contrast input[name="yesno"]:checked+label[for="no"]:before {
+    color: var(--color-cancel);
+}
+
+body.contrast footer {
+    background: var(--color-black);
+    color: var(--color-white);
+}
+
+body.contrast .footer .col li a:hover {
+    color: var(--color-white);
+    text-decoration: underline;
+}
